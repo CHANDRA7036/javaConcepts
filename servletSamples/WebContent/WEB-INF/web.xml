@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+ <servlet>
+ <servlet-name>serveltTohtmlfile</servlet-name>
+ <servlet-class>servletSamples.Add</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>serveltTohtmlfile</servlet-name>
+ <url-pattern>/add</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+ <servlet-name>servletToservelet</servlet-name>
+ <servlet-class>servletSamples.SqServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>servletToservelet</servlet-name>
+ <url-pattern>/sq</url-pattern>
+ </servlet-mapping>
+ 
+      <servlet>
+          <servlet-name>wishing</servlet-name>
+          <servlet-class>servletSamples.Wishes</servlet-class>
+     </servlet>
+     <servlet-mapping>
+          <servlet-name>wishing</servlet-name>
+          <url-pattern>/test</url-pattern>
+     </servlet-mapping>
+ 
+</web-app>
