@@ -28,7 +28,6 @@ public class Wishes extends HttpServlet {
         else
              pw.println("Good night");
 
-        pw.println("<br><br><a href= '../Wishes/wish.html'>Home</a>");
         //close stream object
         pw.close();
     }

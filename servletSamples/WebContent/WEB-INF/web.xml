@@ -28,5 +28,37 @@
           <servlet-name>wishing</servlet-name>
           <url-pattern>/test</url-pattern>
      </servlet-mapping>
+
+     <servlet>
+          <servlet-name>vote</servlet-name>
+          <servlet-class>servletSamples.VoteEligibility</servlet-class>
+     </servlet>
+     <servlet-mapping>
+          <servlet-name>vote</servlet-name>
+          <url-pattern>/vturl</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+          <servlet-name>context</servlet-name>
+          <servlet-class>servletSamples.ServletContextAndConfg</servlet-class>
+          <init-param>
+          <param-name>name</param-name>
+          <param-value>Sukesh</param-value>
+          </init-param>
+     </servlet>
+     <servlet-mapping>
+          <servlet-name>context</servlet-name>
+          <url-pattern>/ctx</url-pattern>
+     </servlet-mapping>
+     
+     <context-param>
+     <param-name>name</param-name>
+     <param-value>Chandra</param-value>
+     </context-param>
+     
+     <context-param>
+     <param-name>Phone</param-name>
+     <param-value>Samsung</param-value>
+     </context-param>
  
 </web-app>
