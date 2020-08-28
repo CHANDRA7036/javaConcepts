@@ -6,14 +6,12 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body bgcolor="cyan">
-<% 
-    int i=Integer.parseInt(request.getParameter("num1"));
-	int j=Integer.parseInt(request.getParameter("num2"));
-	int k=i*j;
-	
-	out.println("Result:"+k);
-%>
- 
+<body>
+<form action="Process.jsp">
+Enter Num1:<input type="text" name="num1"><br><br>
+Enter Num1:<input type="text" name="num2"><br><br>
+<input type=submit value="divide">
+</form>
+
 </body>
 </html>

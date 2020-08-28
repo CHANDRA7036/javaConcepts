@@ -61,4 +61,21 @@
      <param-value>Samsung</param-value>
      </context-param>
  
+  <error-page>  
+  <exception-type>java.lang.Exception</exception-type>  
+  <location>/Error.jsp</location>  
+  </error-page> 
+   <error-page>  
+  <error-code>500</error-code>  
+  <location>/Error.jsp</location>  
+  </error-page> 
+    <servlet>  
+  <servlet-name>s1</servlet-name>  
+  <servlet-class>servletSamples.ControllerServlet</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+  <servlet-name>s1</servlet-name>  
+  <url-pattern>/ControllerServlet</url-pattern>  
+  </servlet-mapping>
+ 
 </web-app>

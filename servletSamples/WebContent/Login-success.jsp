@@ -6,14 +6,13 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body bgcolor="cyan">
-<% 
-    int i=Integer.parseInt(request.getParameter("num1"));
-	int j=Integer.parseInt(request.getParameter("num2"));
-	int k=i*j;
-	
-	out.println("Result:"+k);
+<body>
+<%@page import="servletSamples.LoginBean"%>  
+  
+<p>You are successfully logged in!</p>  
+<%  
+LoginBean bean=(LoginBean)request.getAttribute("bean");  
+out.print("Welcome, "+bean.getName());  
 %>
- 
 </body>
 </html>

@@ -6,14 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body bgcolor="cyan">
-<% 
-    int i=Integer.parseInt(request.getParameter("num1"));
-	int j=Integer.parseInt(request.getParameter("num2"));
-	int k=i*j;
-	
-	out.println("Result:"+k);
-%>
- 
+<body>
+<p>Sorry! username or password error</p>  
+<%@ include file="Login.jsp" %>
 </body>
 </html>
